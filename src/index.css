@@ -8,12 +8,93 @@
 }
 
 body{
-  background: #F2F2F2;
+  background-image: url(./assets/Bitmap.jpg);
+  background-repeat: repeat-x;
+  background-size:cover;
+  position: relative;
 }
 
-header img{
+.todo-Content{
+  display: flex;
+  justify-content:left;
+  max-width: 580px;
+  margin: auto;
+  padding-bottom: 30px;
+
+}
+
+.page-title{
+  margin-top: 60px;
+  letter-spacing: 0.5em;
+  color: #fff;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.TodoInput{
+  display: flex;
+  justify-content:left;
+  max-width: 580px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+
+.InputActions button{
+  padding: 18px;
+  font-size: 17px;
+  font-weight: 600;
+  background: #fff;
+  border-radius: 8px 0px 0px 8px;
+  cursor: pointer;
+}
+
+.InputActions input{
+  font-size: 17px;
+  padding: 18px; 
+  width: 530px;
+  border-radius: 0px 8px 8px 0px;
+  outline: none;
+
+}
+
+.List-Container{
+  display: block;
   position: absolute;
-  width: 100%;
+  justify-content:center;
+  width: 580px;
+  margin-left: 480px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.List-Container .eachListItem{
+  border-bottom: 1px solid gray;
+  padding: 15px;
+}
+.List-Container .eachListItem:last-of-type{
+  border-bottom: none;
+}
+
+.List-Container .eachListItem input[type=checkbox]{
+  margin-right: 5px;
+   transform: scale(1.4);
+   cursor: pointer;
+
+}
+.List-Container .eachListItem span{
+  margin-left: 10px;
+  font-size: 17px;
+}
+.List-Container .eachListItem .icon{
+  margin-left: 78%;
+  cursor: pointer;
+}
+
+.List-Container li{
+  list-style: none;
 }
 
 .header-Container{
@@ -49,7 +130,7 @@ header img{
   align-items: center;
 }
 
-.header-Container input[type= button]{
+.header-Container button{
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -57,6 +138,8 @@ header img{
   border: 1px solid gray;
   cursor: pointer;
   color: #540f94;
+  font-weight: bold;
+  font-size: 14px;
 
 }
 
@@ -67,57 +150,5 @@ header img{
   background: transparent;
 
 }
-.header-Container input[type= text]:focus{
-  outline: none;
-}
 
-
-.content-Container{
-  position: relative;
-  margin: auto;
-  max-width: 588px;
-  height: 250px;
-}
-
-.Todo-List{
-  margin-top: 26px;
-  border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 40px;
-}
-
-.content-Container p{
-font-size: 18px;
-height: 3em;
-padding: 13px 0;
-border-bottom: 1px solid rgb(162, 160, 160);
-display: flex;
-color: #333;
-align-items: baseline;
-}
-
-.content-Container p:last-of-type{
-  border-bottom: none;
-}
-
-.content-Container input[type=button]{
-font-size: 6px;
-  width: 21px;
-  border-radius: 50%;
-  margin: 0 16px;
-  border: 1px solid gray;
-  padding-top: 10px;
-  cursor: pointer;
-
-}
-
-.content-Container footer p{
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  font-size: 15px;
-  color: gray;
-}
-  
 
